@@ -92,9 +92,12 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _test_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5);
+
 
 
 console.log('from index.js')
+console.log({md: _test_md__WEBPACK_IMPORTED_MODULE_1__["default"]})
 
 /***/ }),
 /* 1 */
@@ -509,6 +512,14 @@ function toComment(sourceMap) {
   var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
   return "/*# ".concat(data, " */");
 }
+
+/***/ }),
+/* 5 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<h1 id=\"这是一个markdown\">这是一个markdown</h1>\n<ul>\n<li>111</li>\n<li>222</li>\n<li>333</li>\n</ul>\n");
 
 /***/ })
 /******/ ]);
