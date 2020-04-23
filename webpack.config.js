@@ -1,4 +1,10 @@
-module.exports = {
+// webpack.config.js
+// import { Configuration } from 'webpack' // 仅仅在配置时打开注释，打包时需要注释改代码
+
+/**
+ * @type {Configuration}
+ */
+const config ={
   mode: 'none',
   entry: './src/index.js',
   output: {
@@ -19,3 +25,5 @@ module.exports = {
     ]
   }
 }
+
+module.exports = config
