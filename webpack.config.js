@@ -1,6 +1,8 @@
 // webpack.config.js
 // import { Configuration } from 'webpack' // 仅仅在配置时打开注释，打包时需要注释改代码
 
+const RemoveJsCommentPlugin = require('./my-plugin/remove-js-comment-plugin')
+
 /**
  * @type {Configuration}
  */
@@ -23,7 +25,10 @@ const config ={
         use: ['html-loader', './my-loader/markdown-loader-to-html'] // markdown-loader-to-html 返回
       }
     ]
-  }
+  },
+  plugins:[
+    new RemoveJsCommentPlugin()
+  ]
 }
 
 module.exports = config
